@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruity Smoothie Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="logo.png" alt="Smoothie Maker Logo" class="logo">
+            <h1 class="title">fruity fusion smoothie maker</h1>
+            <p class="description">Create delicious smoothies with your favorite fruits and milk!</p>
+
+            
+            <h2 class="description">Smoothie Order</h2>
+            <form id="smoothie-form">
+                <label for="fruit" class="description">Choose a fruit:</label>
+                <select id="fruit">
+                    <option value="strawberry">Strawberry</option>
+                    <option value="banana">Banana</option>
+                    <option value="mango">Mango</option>
+                    <option value="pineapple">Pineapple</option>
+                </select><br>
+                <label class="description">Choose a milk:</label>
+                <input  class="description" type="radio" id="almond" name="milk" value="almond">
+                <label  class="description" for="almond">Almond</label>
+                <input  class="description" type="radio" id="coconut" name="milk" value="coconut">
+                <label  class="description" for="coconut">Coconut</label>
+                <input  class="description" type="radio" id="soy" name="milk" value="soy">
+                <label  class="description" for="soy">Soy</label><br>
+                <label class="description">Choose sweeteners:</label>
+                <input  class="description" type="checkbox" id="honey" name="sweetener" value="honey">
+                <label  class="description" for="honey">Honey</label>
+                <input  class="description" type="checkbox" id="sugar" name="sweetener" value="sugar">
+                <label  class="description" for="sugar">Sugar</label><br>
+                <button t class="description" ype="button" onclick="orderSmoothie()">Order</button>
+            </form>
+            <div class="smoothie-description" id="smoothie-description"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
